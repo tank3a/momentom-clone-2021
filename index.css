@@ -16,36 +16,6 @@ body {
   align-items: center;
 }
 
-.form-input::placeholder {
-  color: white;
-}
-.form-input,
-.greetings {
-  background: 0;
-  border: 0;
-  border-radius: 5px;
-  border-bottom: 2px solid white;
-  text-shadow: 1px 1px 5px grey;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 200;
-  outline: none;
-  line-height: 1.2;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.form,
-.greetings {
-  display: none;
-}
-.showing {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -84,6 +54,32 @@ header {
   font-weight: 600;
   color: white;
 }
-aside {
-  font-family: "Indie Flower", cursive;
+
+.form-input::placeholder {
+  color: white;
+}
+.form-input,
+.greetings {
+  background: 0;
+  border: 0;
+  border-bottom: 2px solid white;
+  text-shadow: 1px 1px 5px grey;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 200;
+  outline: none;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+.showing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
 }

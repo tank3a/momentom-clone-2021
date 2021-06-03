@@ -1,7 +1,7 @@
 const form = document.querySelector(".js-form"),
 input = form.querySelector("input"),
 greeting = document.querySelector(".js-greetings");
-
+    
 const USER_LS = "currentUser",
 SHOWING_CL = "showing";
 
@@ -16,7 +16,7 @@ function handleSubmit(event) {
 function handleDelete(event) {
     event.preventDefault();
     deleteName();
-    loadName();
+    askForName();
 }
 function saveName(text) {
     localStorage.setItem(USER_LS, text);
