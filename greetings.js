@@ -10,12 +10,21 @@ function handleSubmit(event) {
     const currentValue = input.value;
     paintGreeting(currentValue);
     saveName(currentValue);
+    input.value="";
 }
 
+function handleDelete(event) {
+    event.preventDefault();
+    deleteName();
+    loadName();
+}
 function saveName(text) {
     localStorage.setItem(USER_LS, text);
 }
-
+function deleteName() {
+    localStorage.removeItem(USER_LS);
+    greeting.classList.remove(SHOWING_CL);
+}
 function askForName() {
     form.classList.add(SHOWING_CL);
     form.addEventListener("submit", handleSubmit);
@@ -23,7 +32,8 @@ function askForName() {
 function paintGreeting(text) {
     form.classList.remove(SHOWING_CL);
     greeting.classList.add(SHOWING_CL);
-    greeting.innerText = `Hello ${text}`;
+    greeting.innerText = `Hello ${text}!`;
+    greeting.addEventListener("click", handleDelete);
 }
 function loadName() {
     const currentUser = localStorage.getItem(USER_LS);

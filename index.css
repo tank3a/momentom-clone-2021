@@ -1,12 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Indie+Flower&family=Squada+One&display=swap");
+@import "reset.css";
+
+html {
+  height: 100%;
+  width: 100%;
+}
 body {
   background-color: #84817a;
+  font-family: "Bree Serif", serif;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.form-input::placeholder {
+  color: white;
+}
+.form-input,
+.greetings {
+  background: 0;
+  border: 0;
+  border-radius: 5px;
+  border-bottom: 2px solid white;
+  text-shadow: 1px 1px 5px grey;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 200;
+  outline: none;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 10px;
+}
+
 .form,
 .greetings {
   display: none;
 }
 .showing {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
 }
 
 @keyframes fadeIn {
@@ -26,4 +63,27 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 2s ease-out;
+}
+
+header {
+  font-family: "Squada One", cursive;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clock h1 {
+  text-shadow: 1px 1px 5px grey;
+  font-size: 200px;
+  font-weight: 600;
+  color: white;
+}
+aside {
+  font-family: "Indie Flower", cursive;
 }
