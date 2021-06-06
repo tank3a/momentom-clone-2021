@@ -2,38 +2,54 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <!-- will change later -->
     <title>Momentom</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <span class="js-weather"></span>
     </header>
-    <section>
-      <div class="js-clock clock">
-        <h1 class="js-title">00:00:00</h1>
-      </div>
-      <form class="js-form form">
-        <input
-          class="form-input"
-          type="text"
-          placeholder="what is your name?"
-          required
-        />
-      </form>
-      <h4 class="js-greetings greetings"></h4>
-    </section>
-    <section>
-      <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do" />
-      </form>
-      <ul class="js-toDoList"></ul>
-    </section>
 
-    <script src="clock.js"></script>
-    <script src="greetings.js"></script>
-    <script src="todo.js"></script>
-    <script src="background.js"></script>
-    <script src="weather.js"></script>
+    <main>
+      <div class="time-wrapper">
+        <div class="time__date-js">
+          <h2 class="time__date-title">0000. 00. 00</h2>
+        </div>
+        <div class="time__clock-js time__clock">
+          <h1 class="time__clock-title">00:00:00</h1>
+        </div>
+      </div>
+
+      <div class="welcome-wrapper">
+        <form class="welcome__form-js welcome__form">
+          <input
+            class="welcome__form__input"
+            type="text"
+            placeholder="what is your name?"
+            required
+          />
+        </form>
+        <h4 class="welcome__greeting-js welcome__greeting"></h4>
+      </div>
+
+      <!-- will make later -->
+      <div class="news-wrapper"></div>
+    </main>
+
+    <footer>
+      <div class="todo-wrapper">
+        <form class="todo__form-js">
+          <input class="todo-input" type="text" placeholder="Write a to do" />
+        </form>
+        <ul class="todo__list-js"></ul>
+      </div>
+    </footer>
+
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

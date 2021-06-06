@@ -1,6 +1,6 @@
-const toDoForm = document.querySelector(".js-toDoForm"),
+const toDoForm = document.querySelector(".todo__form-js"),
 toDoInput = toDoForm.querySelector("input"),
-toDoList = document.querySelector(".js-toDoList");
+toDoList = document.querySelector(".todo__list-js");
 
 const TODOS_LS = "toDos";
 

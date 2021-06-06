@@ -1,19 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Indie+Flower&family=Squada+One&display=swap");
-@import "reset.css";
-
-html {
-  height: 100%;
-  width: 100%;
-}
 body {
   background-color: #84817a;
   font-family: "Bree Serif", serif;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
 }
 
 @keyframes fadeIn {
@@ -59,7 +49,8 @@ header {
   color: white;
 }
 .form-input,
-.greetings {
+.greetings,
+.todo-input {
   background: 0;
   border: 0;
   border-bottom: 2px solid white;
@@ -82,4 +73,23 @@ header {
   justify-content: center;
   align-items: center;
   border: 0;
+}
+
+.todo-container {
+  position: absolute;
+  z-index: 2;
+  top: 30vh;
+  right: 7vw;
+  width: 20%;
+  height: 60%;
+  border: 3px solid white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.todo-container form {
+  width: 20vw;
+}
+.todo-input {
+  width: 100%;
+  font-size: 30px;
 }
