@@ -26,6 +26,7 @@
           <input
             class="welcome__form__input"
             type="text"
+            maxlength="20"
             placeholder="what is your name?"
             required
           />
@@ -34,13 +35,31 @@
       </div>
 
       <!-- will make later -->
-      <div class="news-wrapper"></div>
+      <div class="news-wrapper">
+        <div class="news__icon"></div>
+        <div class="news__page">
+          <div class="newsletter"></div>
+          <div class="newsletter"></div>
+          <div class="newsletter"></div>
+          <div class="newsletter"></div>
+          <div class="newsletter"></div>
+          <div class="newsletter"></div>
+        </div>
+      </div>
     </main>
 
     <footer>
       <div class="todo-wrapper">
+        <div class="todo__icon">
+          <span>TODOLIST</span>
+        </div>
         <form class="todo__form-js">
-          <input class="todo-input" type="text" placeholder="Write a to do" />
+          <input
+            class="todo__form__input"
+            type="text"
+            placeholder="Write a to do"
+            maxlength="24"
+          />
         </form>
         <ul class="todo__list-js"></ul>
       </div>
@@ -51,5 +70,6 @@
     <script src="js/todo.js"></script>
     <script src="js/background.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/news.js"></script>
   </body>
 </html>
