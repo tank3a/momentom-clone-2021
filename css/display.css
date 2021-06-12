@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #84817a;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+header {
+  display: block;
+  background-color: #a5b1c2;
+  padding: 2px 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+main aside {
+  position: absolute;
+  top: 30vh;
+  left: 5px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}

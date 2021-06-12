@@ -12,56 +12,68 @@
     </header>
 
     <main>
-      <div class="time-wrapper">
-        <div class="time__date-js">
-          <h2 class="time__date-title">0000. 00. 00</h2>
+      <aside>
+        <div class="news-wrapper">
+          <div class="news__icon">NEWS_ICON</div>
+          <div class="news__page">
+            <div class="newsletter"></div>
+            <div class="newsletter"></div>
+            <div class="newsletter"></div>
+            <div class="newsletter"></div>
+            <div class="newsletter"></div>
+            <div class="newsletter"></div>
+          </div>
         </div>
-        <div class="time__clock-js time__clock">
-          <h1 class="time__clock-title">00:00:00</h1>
+      </aside>
+      <section>
+        <div class="time-wrapper">
+          <div class="time__date-js">
+            <h2 class="time__date-title">0000. 00. 00</h2>
+          </div>
+          <div class="time__clock-js time__clock">
+            <h1 class="time__clock-title">00:00:00</h1>
+          </div>
         </div>
-      </div>
 
-      <div class="welcome-wrapper">
-        <form class="welcome__form-js welcome__form">
-          <input
-            class="welcome__form__input"
-            type="text"
-            maxlength="20"
-            placeholder="what is your name?"
-            required
-          />
-        </form>
-        <h4 class="welcome__greeting-js welcome__greeting"></h4>
-      </div>
-
+        <div class="welcome-wrapper">
+          <form class="welcome__form-js welcome__form">
+            <input
+              class="welcome__form__input"
+              type="text"
+              maxlength="20"
+              placeholder="what is your name?"
+              required
+            />
+          </form>
+          <h4 class="welcome__greeting-js welcome__greeting"></h4>
+        </div>
+      </section>
       <!-- will make later -->
-      <div class="news-wrapper">
-        <div class="news__icon"></div>
-        <div class="news__page">
-          <div class="newsletter"></div>
-          <div class="newsletter"></div>
-          <div class="newsletter"></div>
-          <div class="newsletter"></div>
-          <div class="newsletter"></div>
-          <div class="newsletter"></div>
-        </div>
-      </div>
     </main>
 
     <footer>
-      <div class="todo-wrapper">
-        <div class="todo__icon">
-          <span>TODOLIST</span>
+      <div class="todo_wrapper">
+        <div class="todo__list">
+          <form class="todo__form-js">
+            <input
+              class="todo__form__input"
+              type="text"
+              placeholder="Write a to do"
+              maxlength="24"
+            />
+          </form>
+          <div class="todo__pending">
+            <h2 class="todo__title">PENDING</h2>
+            <ul class="pending-list list__items"></ul>
+          </div>
+          <div class="todo__finished">
+            <h2 class="todo__title">FINISHED</h2>
+            <ul class="finished-list list__items"></ul>
+          </div>
         </div>
-        <form class="todo__form-js">
-          <input
-            class="todo__form__input"
-            type="text"
-            placeholder="Write a to do"
-            maxlength="24"
-          />
-        </form>
-        <ul class="todo__list-js"></ul>
+        <div class="todo__icon">
+          <span>TODO</span>
+        </div>
       </div>
     </footer>
 
@@ -70,6 +82,6 @@
     <script src="js/todo.js"></script>
     <script src="js/background.js"></script>
     <script src="js/weather.js"></script>
-    <script src="js/news.js"></script>
+    <!-- <script src="js/news.js"></script> -->
   </body>
 </html>
