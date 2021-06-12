@@ -26,10 +26,10 @@ main {
   align-items: center;
 }
 
-main aside {
+aside {
   position: absolute;
-  top: 30vh;
-  left: 5px;
+  top: 8px;
+  left: 8px;
 }
 
 footer {

@@ -17,14 +17,6 @@
   font-size: 20px;
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .todo__list {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.7);
