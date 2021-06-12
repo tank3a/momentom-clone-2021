@@ -3,8 +3,8 @@ const subtitle = document.querySelector(".nav__game__subtitle-js"),
   textSelect = document.querySelector(".js-selection span"),
   textResult = document.querySelector(".js-result span");
 
-const form = document.querySelector(".nav__game__form"),
-  formInput = form.querySelector(".nav__game__input");
+const nav__game__form = document.querySelector(".nav__game__form"),
+  formInput = nav__game__form.querySelector(".nav__game__input");
 
 function handleRange(event) {
   const maxRange = range.value;
@@ -37,6 +37,6 @@ function handleSubmit(event) {
 
 function init() {
   range.addEventListener("input", handleRange);
-  form.addEventListener("submit", handleSubmit);
+  nav__game__form.addEventListener("submit", handleSubmit);
 }
 init();

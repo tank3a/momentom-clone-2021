@@ -1,26 +1,27 @@
 const body = document.querySelector("body");
-const location = document.querySelector(".background__location");
+const background__location = document.querySelector(".background__location");
 
-// const locate = ["Jeonju, korea",
-//                 "212 caves rd,siesta park wa 6280, australia, siesta park",
-//                 "Bockhütte, garmisch partenkirchen, germany",
-//                 "King city, canada",
-//                 "Princeton, canada",
-//                 "Silverthorne, united states",
-//                 "Smalfjord, tana, norway",
-//                 "Stakkholtsgja canyon, iceland",
-//                 "Tokyo, japan",
-//                 "Yosemite valley, united states"];
+const locate = ["Jeonju, korea",
+                "212 caves rd,siesta park wa 6280, australia, siesta park",
+                "Bockhütte, garmisch partenkirchen, germany",
+                "King city, canada",
+                "Princeton, canada",
+                "Silverthorne, united states",
+                "Smalfjord, tana, norway",
+                "Stakkholtsgja canyon, iceland",
+                "Tokyo, japan",
+                "Yosemite valley, united states"];
 
 const IMG_NUMBER = 10;
 
-// function paintLocation(imgNumber) {
-//     const span = document.createElement("span");
-//     const locationName = locate[imgNumber-1];
-//     span.innerText = locationName;
-//     location.appendChild(span);
+function paintLocation(imgNumber) {
+    const span = document.createElement("span");
+    console.log(locate[imgNumber-1]);
+    const locationName = locate[imgNumber-1];
+    span.innerText = locationName;
+    background__location.appendChild(span);
+}
 
-//}
 function paintImage(imgNumber) {
     const image = new Image();
     image.src = `img/${imgNumber}.jpg`;

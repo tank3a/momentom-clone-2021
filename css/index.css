@@ -7,3 +7,12 @@
   z-index: -1;
   animation: fadeIn 2s ease-out;
 }
+
+.background__location {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+}
+.background__location i {
+  margin-right: 5px;
+}
