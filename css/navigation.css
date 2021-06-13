@@ -17,7 +17,7 @@
   top: 7vh;
   left: 4vw;
   padding: 1vh 1vw;
-  transform: translateX(-1250px);
+  transform: translateX(-90vw);
 }
 .nav__help {
   width: 30%;
@@ -107,7 +107,7 @@
 
 @keyframes slideX {
   from {
-    transform: translateX(-1250px);
+    transform: translateX(-90vw);
   }
   to {
     transform: translateX(0);
@@ -118,6 +118,6 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-1250px);
+    transform: translateX(-90vw);
   }
 }
