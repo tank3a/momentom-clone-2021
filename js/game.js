@@ -8,6 +8,7 @@ const nav__game__form = document.querySelector(".nav__game__form"),
 
 function handleRange(event) {
   const maxRange = range.value;
+  formInput.value = "";
   subtitle.innerText = `Generate a Number between 0 and ${maxRange}`;
   formInput.setAttribute("max", maxRange);
 }

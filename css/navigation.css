@@ -1,4 +1,123 @@
+.aside-wrapper {
+  position: relative;
+}
+.navigator__icon {
+  cursor: pointer;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 85vw;
+  height: 85vh;
+  border-radius: 20px;
+  background-color: rgba(170, 170, 170, 0.9);
+  z-index: 2;
+  position: absolute;
+  top: 7vh;
+  left: 4vw;
+  padding: 1vh 1vw;
+  transform: translateX(-1250px);
+}
+.nav__help {
+  width: 30%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+}
+.nav__help h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.nav__help li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.nav__container__small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 90%;
+}
+.nav__container__small_bracket {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  height: 50%;
+}
+.nav__container__small_bracket:nth-child(2) {
+  margin-top: 5%;
+}
+.nav_upcoming,
+.nav__game {
+  padding: 1%;
+  background-color: #34495e;
+  border-radius: 10px;
+  width: 45%;
+  height: 100%;
+}
+.nav_upcoming {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.nav__game {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.nav__game h2 {
+  margin-bottom: 2%;
+  font-weight: 200;
+  font-size: 25px;
+}
+.nav__game h4 {
+  margin-bottom: 4%;
+}
+.nav__game__form {
+  display: inline;
+}
+.range-input {
+  width: 150px;
+  color: grey;
+  transform: rotateX(180deg);
+}
+.nav__game__input {
+  width: 50px;
+}
+.result span {
+  display: block;
+  margin-top: 5%;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .nav__container__show {
+  animation: slideX 1s ease-in-out forwards;
 }
 .nav__container__hidden {
+  animation: slideRevX 1s ease-in-out forwards;
+}
+
+@keyframes slideX {
+  from {
+    transform: translateX(-1250px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideRevX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1250px);
+  }
 }

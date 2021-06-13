@@ -18,46 +18,80 @@
             <i class="fas fa-bars fa-3x"></i>
           </div>
           <div class="nav__container">
-            <div class="nav__help"></div>
-            <div class="nav__game">
-              <h3>Random Number Game</h3>
-              <h5 class="nav__game__subtitle-js">
-                Generate a Number between 0 and 100
-              </h5>
-              <div>
-                <datalist id="tickmark">
-                  <option value="50"></option>
-                  <option value="100"></option>
-                  <option value="150"></option>
-                  <option value="200"></option>
-                </datalist>
-                <input
-                  class="range-input js-range"
-                  type="range"
-                  list="tickmark"
-                  min="0"
-                  max="200"
-                  step="5"
-                />
+            <div class="nav__help">
+              <h1>HELP</h1>
+              <ul>
+                <li><span>1. The website will remember your name!</span></li>
+                <li>
+                  <span>2. If you click your name, it will be reset</span>
+                </li>
+                <li>
+                  <span
+                    >3. You can write todo-list by clicking the "TODO" icon
+                  </span>
+                </li>
+                <li><span>4. You can play "Random Number Game"!</span></li>
+                <li><span>5. Other blocks will be made up soon!</span></li>
+                <li>
+                  <span
+                    >6. The temperature will be displayed at the top right
+                    corner</span
+                  >
+                </li>
+                <li>
+                  <span>7. More questions, please email </span
+                  ><a href="mailto:tank3a@gmail.com">Send Email</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__container__small">
+              <div class="nav__container__small_bracket">
+                <div class="nav__game">
+                  <h2>Random Number Game</h2>
+                  <h4 class="nav__game__subtitle-js">
+                    Generate a Number between 0 and 100
+                  </h4>
+                  <div>
+                    <datalist id="tickmark">
+                      <option value="50"></option>
+                      <option value="100"></option>
+                      <option value="150"></option>
+                      <option value="200"></option>
+                    </datalist>
+                    <input
+                      class="range-input js-range"
+                      type="range"
+                      list="tickmark"
+                      min="0"
+                      max="200"
+                      step="5"
+                    />
+                  </div>
+                  <div>
+                    <span>Guess the number:</span>
+                    <form class="nav__game__form">
+                      <input
+                        class="nav__game__input"
+                        type="number"
+                        min="0"
+                        max="100"
+                        required
+                      />
+                      <input type="submit" value="Play!" />
+                    </form>
+                  </div>
+                  <div class="js-selection">
+                    <span></span>
+                  </div>
+                  <div class="js-result result">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="nav_upcoming">Will be Updated Soon</div>
               </div>
-              <div>
-                <span>Guess the number:</span>
-                <form class="nav__game__form">
-                  <input
-                    class="nav__game__input"
-                    type="number"
-                    min="0"
-                    max="100"
-                    required
-                  />
-                  <input type="submit" value="Play!" />
-                </form>
-              </div>
-              <div class="js-selection">
-                <span></span>
-              </div>
-              <div class="js-result result">
-                <span></span>
+              <div class="nav__container__small_bracket">
+                <div class="nav_upcoming">Will be Updated Soon</div>
+                <div class="nav_upcoming">Will be Updated Soon</div>
               </div>
             </div>
           </div>
@@ -126,6 +160,7 @@
     <script src="js/greetings.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/navigation.js"></script>
     <script src="js/game.js"></script>
   </body>
 </html>
