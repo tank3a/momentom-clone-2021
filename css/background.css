@@ -16,3 +16,7 @@
 .background__location i {
   margin-right: 5px;
 }
+.background__location a {
+  color: white;
+  text-decoration: none;
+}

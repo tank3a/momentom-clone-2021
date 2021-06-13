@@ -4,6 +4,10 @@
 .navigator__icon {
   cursor: pointer;
 }
+.navigator__icon .image__hidden {
+  display: none;
+}
+
 .nav__container {
   display: flex;
   justify-content: space-around;
